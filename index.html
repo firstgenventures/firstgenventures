@@ -16,6 +16,19 @@
 	</head>
 	<body>
 
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" language="JavaScript">
+  			function set_body_height() { // set body height = window height
+    			$('body').height($(window).height());
+  			}
+  			$(document).ready(function() {
+    		$(window).bind('resize', set_body_height);
+    		set_body_height();
+  			});
+		</script>
+
+
+
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -39,12 +52,12 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>First Generation Ventures</h1>
-							<p>A UC Berkeley student-run entrepreneurship hub for students, founders, and mentors. </p>
+							<p>A UC Berkeley student-run entrepreneurship hub for students, startups, investors. </p>
 							<ul class="actions">
 								<!-- <li><a href="#one" class="button scrolly">Learn more</a></li> -->
 								<div class="row">
 									<li><a href="#one" class="button scrolly">Learn More</a></li>
-									<li><a href="#one" class="button scrolly">Apply</a></li>
+									<!-- <li><a href="#one" class="button scrolly">Apply</a></li> -->
 								</div>
 							</ul>
 						</div>
@@ -60,7 +73,7 @@
 									<p>Student Partner</p>
 									<ul class="actions">
 										<li><a href="#" class="button">Contact</a></li>
-										<li><a href="https://www.linkedin.com/in/zoebhargava/" class="fa fa-linkedin"><span class="label"></span></a></li>
+										<li><a href="https://www.linkedin.com/in/zoebhargava/" target="_blank" class="fa fa-linkedin"><span class="label"></span></a></li>
 										<!-- <li><a href="#" class="fa fa-envelope"><span class="label"></span></a></li> -->
 									</ul>
 								</div>
@@ -90,14 +103,14 @@
 									<ul class="actions">
 										<!-- <li><a href="#" class="button">Learn more</a></li> -->
 										<li><a href="#" class="button">Contact</a></li>
-										<li><a href="https://www.linkedin.com/in/ruochenhuang/detail/photo/" target="_blank" class="fa fa-linkedin"><span class="label"></span></a></li>
+										<li><a href="https://www.linkedin.com/in/ruochenhuang" target="_blank" class="fa fa-linkedin"><span class="label"></span></a></li>
 										<!-- <li><a href="#" class="fa fa-envelope"><span class="label"></span></a></li> -->
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/clear.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/david.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>David Tao</h2>
@@ -112,7 +125,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/david.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>David Tao</h2>
@@ -213,8 +226,8 @@
 					</section>
 			<!-- Three -->
 					<section id="three" class="wrapper style2 spotlights">
-						<section>
-							<a href="https://www.linkedin.com/pulse/students-guide-uc-berkeleys-startup-ecosystem-david-tao" target="_blank" class="image"><img src="images/cal.jpg" alt="" data-position="center center" /></a>
+						<!-- <section>
+							<a href="https://www.linkedin.com/pulse/students-guide-uc-berkeleys-startup-ecosystem-david-tao" target="_blank" class="image"><img src="images/david.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>A Students Guide to UC Berkeley's Startup Ecosystem</h2>
@@ -224,12 +237,24 @@
 									</ul>
 								</div>
 							</div>
-						</section>
+						</section> -->
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="https://www.linkedin.com/pulse/students-guide-uc-berkeleys-startup-ecosystem-david-tao" target="_blank" class="image"><img src="images/campanile.jpeg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Feugiat consequat</h2>
+									<h2>UC Berkeley's Startup Ecosystem Guide</h2>
+									<p>Student Partner David Tao compiled an extensive list of Cal's many clubs, organizations, incubators, and acclerators!</p>
+									<ul class="actions">
+										<li><a href="https://www.linkedin.com/pulse/students-guide-uc-berkeleys-startup-ecosystem-david-tao" target="_blank" class="button">Read More</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Ultricies aliquam</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 									<ul class="actions">
 										<li><a href="#" class="button">Learn more</a></li>
@@ -249,6 +274,7 @@
 								</div>
 							</div>
 						</section>
+					<!-- <div class="typeform-widget" data-url="https://matt1180.typeform.com/to/MVUUlt" style="width: 100%; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/forms/application/?utm_campaign=MVUUlt&amp;utm_source=typeform.com-9987467-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-application&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div> -->
 					</section>
 				<!-- Four -->
 					<section id="four" class="wrapper style1 fade-up">
@@ -257,7 +283,7 @@
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="email.php">
 										<div class="field half first">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" />
@@ -278,9 +304,8 @@
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Address</h3>
-											<span>2311 Piedmont Ave.<br />
-											Berkeley, CA 94704<br />
+											<h3>Located In</h3>
+											<span> Berkeley, CA 94704<br />
 											USA</span>
 										</li>
 										<li>

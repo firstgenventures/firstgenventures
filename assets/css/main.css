@@ -3019,6 +3019,7 @@
 
 		body.is-ie .spotlights > section {
 			min-height: 0;
+			/*max-hegiht: 10em;*/
 		}
 
 		.spotlights > section > .image {
@@ -3148,6 +3149,7 @@
 			}
 
 		}
+		
 
 /* Table */
 
